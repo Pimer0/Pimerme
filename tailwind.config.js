@@ -3,6 +3,13 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {},
+		height: {
+			100: "436px",
+		},
+		width: {
+			100: "395px",
+		},
+
 		fontFamily: {
 			rob: ["Roboto", "sans-serif"],
 			mont: ["Montserrat", "sans-serif"],
