@@ -6,6 +6,7 @@ export default {
 		fontFamily: {
 			rob: ["Roboto", "sans-serif"],
 			mont: ["Montserrat", "sans-serif"],
+			lat: ["Lato", "sans-serif"],
 			sans: [
 				"ui-sans-serif",
 				"system-ui",
