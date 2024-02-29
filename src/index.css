@@ -14,7 +14,7 @@
 	}
 
 	h2 {
-		@apply text-3xl font-rob font-semibold text-zinc-50;
+		@apply text-3xl font-rob font-semibold text-zinc-400;
 	}
 
 	p {
