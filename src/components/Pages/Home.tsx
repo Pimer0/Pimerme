@@ -17,13 +17,19 @@ function Home() {
     <main className="m-0 flex flex-col place-content-center min-w-[320px] h-screen py-10">
       {/* ici vient les components */}
 
-      <div className="flex mr-6 ml-6">
-        <motion.div whileHover={{ scale: 0.8 }}>
+      <motion.div initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01]
+        }} className="flex mr-6 ml-6">
+        <div >
                   <Profilepic/>
-        </motion.div>
+        </div>
 
         <PresentationCard />
-      </div>
+      </motion.div>
       <motion.div initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }} className="flex flex-row place-content-center">

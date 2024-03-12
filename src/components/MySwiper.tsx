@@ -19,7 +19,7 @@ const Slider = ({ data }) => {
             {data.map((item, idx) => (
                 <img src={item.src} alt={item.alt} key={idx} className={slide === idx ? "slide" : "slide hidden"} />
             ))}
-            <BsArrowRightCircleFill className="arrow arrow-right absolute right-64" onClick={nextSlide} />
+            <BsArrowRightCircleFill className="arrow arrow-right absolute right" onClick={nextSlide} />
             <div className="flex absolute bottom-4">
                 {data.map((_, idx) => (
                     <button className={slide === idx ? 'indicator' : 'indicator indicator-inactive'} key={idx} onClick={() => null}></button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 interface BoutonReactionTapedProps {
     onReactionSelect: (imageSrc: string) => void; // Prop de rappel pour gérer la sélection de la réaction
@@ -12,7 +13,8 @@ const BoutonReactionTaped: React.FC<BoutonReactionTapedProps> = ({ onReactionSel
     };
 
     return ( 
-        <div className={`bg-zinc-900 rounded-3xl border-zinc-500 border overflow-hidden ml-5 mb-4 w-fit ${className}`}>
+        <motion.div whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }} className={`bg-zinc-900 rounded-3xl border-zinc-500 border overflow-hidden ml-5 mb-4 w-fit ${className}`}>
             <button onClick={() => handleReactionClick('./src/assets/img/AstonishedFace.svg')}>
                 <img className="m-2" src="./src/assets/img/AstonishedFace.svg" alt="Astonished Face" />
             </button>
@@ -25,7 +27,7 @@ const BoutonReactionTaped: React.FC<BoutonReactionTapedProps> = ({ onReactionSel
             <button onClick={() => handleReactionClick('./src/assets/img/ExplodingHead.svg')}>
                 <img className="m-2" src="./src/assets/img/ExplodingHead.svg" alt="Exploding Head" />
             </button>
-        </div>
+        </motion.div>
     );
 }
 

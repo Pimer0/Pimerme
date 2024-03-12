@@ -23,7 +23,9 @@ function ShowCasecard(props) {
     }, []);
 
     return ( 
-        <motion.div className="bg-zinc-900 max-h-fit w-100 rounded-3xl border-zinc-500 border m-10 overflow-hidden">
+        <motion.div whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}className="bg-zinc-900 max-h-fit w-100 rounded-3xl border-zinc-500 border m-10 overflow-hidden">
             <h1 className="m-5">{props.title}</h1>
             <h2 className="m-5">{props.sousTitle}</h2>
             <div className="overflow-hidden rounded-3xl border-zinc-500 border m-7 max-h-40">
