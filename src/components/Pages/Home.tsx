@@ -37,7 +37,7 @@ function Home() {
         <ShowcaseCard data={cards.find(item => item.id === 2)} title="Mon tweet préféré :" sousTitle={"Date d'ajout le " + date} />
         <ShowcaseCard data={cards.find(item => item.id === 3)} title="J'adore ce jeu !" sousTitle={"Date d'ajout le " + date} />
       </motion.div>
-      <div className="flex flex-row place-content-center">
+      <div className="flex flex-row place-content-center m-20">
       <MySwiper data={slides}/>
       </div>
     </main>
