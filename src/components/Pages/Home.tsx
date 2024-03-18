@@ -32,7 +32,7 @@ function Home() {
       </motion.div>
       <motion.div initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }} className="flex flex-row place-content-center">
+    transition={{ duration: 0.5 }} className="flex flex-row place-content-center mb-20">
         <ShowcaseCard data={cards.find(item => item.id === 1)} title="Ma carte magic the gathering préférée !" sousTitle={"Date d'ajout le " + date} />
         <ShowcaseCard data={cards.find(item => item.id === 2)} title="Mon tweet préféré :" sousTitle={"Date d'ajout le " + date} />
         <ShowcaseCard data={cards.find(item => item.id === 3)} title="J'adore ce jeu !" sousTitle={"Date d'ajout le " + date} />

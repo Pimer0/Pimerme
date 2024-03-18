@@ -29,7 +29,7 @@ function ShowCasecard(props) {
             <h1 className="m-5">{props.title}</h1>
             <h2 className="m-5">{props.sousTitle}</h2>
             <div className="overflow-hidden rounded-3xl border-zinc-500 border m-7 max-h-40">
-                <img src={props.data.src} alt={props.data.alt} className="object-contain w-96 h-40" />
+                <img src={props.data.src} alt={props.data.alt}/>
             </div>
             {!reactionClicked && <BoutonReaction onClick={handleReactionClick} selectedImage={selectedImage} />}
             {reactionClicked && <BoutonReactionTaped onReactionSelect={handleReactionSelect} />}
