@@ -1,4 +1,3 @@
-// BoutonReaction.tsx
 import React from 'react';
 
 interface BoutonReactionProps {

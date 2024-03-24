@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
 
 interface BoutonReactionTapedProps {
@@ -7,10 +7,20 @@ interface BoutonReactionTapedProps {
 }
 
 const BoutonReactionTaped: React.FC<BoutonReactionTapedProps> = ({ onReactionSelect, className }) => {
+    useEffect(() => {
+        // Récupère la réaction stockée dans sessionStorage lors du chargement du composant
+        const storedReaction = sessionStorage.getItem('selectedReaction');
+        if (storedReaction) {
+            onReactionSelect(storedReaction);
+        }
+    }, [onReactionSelect]);
+
     // Fonction de gestion du clic sur la réaction
     const handleReactionClick = (imageSrc: string) => {
-        onReactionSelect(imageSrc); // Appeler la fonction de rappel avec l'image sélectionnée
+        onReactionSelect(imageSrc);
+        sessionStorage.setItem(`selectedReaction_${id}`, imageSrc); // Utilisez une clé unique basée sur l'ID de la carte
     };
+    
 
     return ( 
         <motion.div whileHover={{ scale: 1.1 }}

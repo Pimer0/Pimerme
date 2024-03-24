@@ -13,6 +13,8 @@
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@react-three/drei": "^9.101.0",
+    "@readyplayerme/react-avatar-creator": "^0.5.0",
+    "@readyplayerme/visage": "^5.1.0",
     "@types/three": "^0.162.0",
     "animejs": "^3.2.2",
     "clsx": "^2.1.0",
