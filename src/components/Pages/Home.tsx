@@ -75,6 +75,7 @@ function Home() {
       <div className="flex flex-row place-content-center m-20">
         <MySwiper data={slides} />
       </div>
+      
     </main>
   );
 }

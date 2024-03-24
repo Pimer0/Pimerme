@@ -2,11 +2,10 @@ import React from 'react'
 
 export default function Rs() {
   return (
-    <div>
-    <h1>
-Salut t'es bien sur ma page réseaux sociaux !
-    </h1>
-
-    </div>
+    <main className="m-0 min-w-[320px] h-screen py-10">
+        <h1>
+            La page des réseaux !
+        </h1>
+        </main>
   )
 }

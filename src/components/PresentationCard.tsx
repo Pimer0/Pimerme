@@ -1,22 +1,6 @@
 import { useEffect } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import anime from "animejs/lib/anime.es";
 
-/* const pre = document.querySelector('.pre');
-/* const div = document.querySelector('.divAnime'); */
-
-/* anime({
-    targets: pre,
-    innerHTML: [0, 10000],
-    easing: 'linear',
-    round: 10, 
-    loop: true,
-}); */
-
-/* anime ({
-    targets: div,
-    translateY: -150,
-}); */
 
 function PresentationCard() {
 
@@ -26,7 +10,7 @@ function PresentationCard() {
         const animation = animate(count, 1000, { duration: 10 });
     
         return animation.stop;
-      }, []);
+      },);
     return ( 
         <div       
          className="divAnime bg-zinc-900 max-h-fit w-2/3 rounded-3xl border-zinc-500 border m-10 overflow-hidden">
