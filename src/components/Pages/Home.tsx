@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PresentationCard from "../PresentationCard";
 import Profilepic from "../Profilepic";
-import ShowcaseCard from "../ShowCasecard";
+import ShowcaseCard from "../ShowCasecard.1";
 import MySwiper from "../MySwiper";
 import { motion } from "framer-motion";
 import { slides, cards } from "../../data/cardData.json";

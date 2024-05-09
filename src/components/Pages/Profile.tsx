@@ -13,8 +13,12 @@ export default function Profile() {
 
 				<p className="text-center m-3">
 					Me voici ! Enfin pas vraiment, c'est juste ce que je m'imagine être en
-					3D. J'ai fais cet autoportrait avec Spline, bouge ta souris en
-					maintenat alt pour me faire bouger dans tout les sens...
+					3D. <br />
+					J'ai fais cet autoportrait avec Spline, bouge ta souris en maintenant{" "}
+					<code className="bg-zinc-400 text-zinc-900 rounded-md p-1">
+						alt
+					</code>{" "}
+					pour me faire bouger dans tout les sens...
 				</p>
 			</div>
 			<Me />
