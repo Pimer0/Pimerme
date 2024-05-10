@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-const Slider = ({ data }) => {
+interface SliderProps {
+	data: Array<{
+		src: string;
+		alt: string;
+		id: number;
+	}>;
+}
+
+const Slider: React.FC<SliderProps> = ({ data }) => {
 	const [slide, setSlide] = useState(0);
 	const [isFlipped, setIsFlipped] = useState(false);
 
@@ -35,17 +43,22 @@ const Slider = ({ data }) => {
 				whileHover={{ scale: 1.1 }}
 				transition={{ type: "spring", stiffness: 400, damping: 10 }}
 			>
-				{data.map((item, idx) => (
-					<motion.img
-						src={item.src}
-						alt={item.alt}
-						key={idx}
-						className={slide === idx ? "slide" : "slide hidden"}
-						onClick={handleCardClick} // Ajoute un gestionnaire de clic pour le retournement de la carte
-						animate={{ rotateX: isFlipped ? 360 : 0 }} // Animer le retournement de la carte
-						transition={{ duration: 0.5 }}
-					/>
-				))}
+				{data.map(
+					(
+						item: { src: string; alt: string; id: number }, // Replace 'ItemType' with the appropriate type for 'item'
+						idx: number
+					) => (
+						<motion.img
+							src={item.src}
+							alt={item.alt}
+							key={idx}
+							className={slide === idx ? "slide" : "slide hidden"}
+							onClick={handleCardClick}
+							animate={{ rotateX: isFlipped ? 360 : 0 }}
+							transition={{ duration: 0.5 }}
+						/>
+					)
+				)}
 			</motion.div>
 
 			<BsArrowRightCircleFill

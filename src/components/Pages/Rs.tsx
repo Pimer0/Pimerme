@@ -1,4 +1,3 @@
-import React from "react";
 import RsCard from "../RsCard";
 import { motion } from "framer-motion";
 
