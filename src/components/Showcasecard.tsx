@@ -4,20 +4,16 @@ import BoutonReaction from "./BoutonReaction";
 import BoutonReactionTaped from "./BoutonReactionTaped";
 
 interface ShowCasecardProps {
-	id: number;
+	id: string;
 	title: string;
 	sousTitle: string;
 	data: {
 		src: string;
 		alt: string;
 	};
+	reactions: unknown;
+	addReaction: (cardId: string, reaction: unknown) => void;
 }
-
-/* interface BoutonReactionTapedProps {
-    id: number;
-    onReactionSelect: (imageSrc: string) => void;
-    onClose: () => void;
-} */
 
 const ShowCasecard: React.FC<ShowCasecardProps> = ({
 	id,
@@ -72,7 +68,7 @@ const ShowCasecard: React.FC<ShowCasecardProps> = ({
 
 			{isReactionTaped && (
 				<BoutonReactionTaped
-					id={id}
+					ident={id}
 					onReactionSelect={handleReactionSelect}
 					onClose={handleCloseReaction}
 				/>

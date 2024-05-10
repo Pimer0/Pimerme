@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 interface BoutonReactionTapedProps {
 	onReactionSelect: (imageSrc: string) => void; // Prop de rappel pour gérer la sélection de la réaction
 	className?: string;
+	ident: string;
+	onClose: () => void;
 }
 
 const BoutonReactionTaped: React.FC<BoutonReactionTapedProps> = ({
