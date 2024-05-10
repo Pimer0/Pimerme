@@ -1,6 +1,6 @@
 import PresentationCard from "../PresentationCard";
 import Profilepic from "../Profilepic";
-import ShowcaseCard from "../ShowCasecard";
+import ShowcaseCard from "../Showcasecard";
 import MySwiper from "../MySwiper";
 import { motion } from "framer-motion";
 import { slides, cards } from "../../data/cardData.json";
