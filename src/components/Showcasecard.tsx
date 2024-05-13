@@ -29,7 +29,7 @@ const ShowCasecard: React.FC<ShowCasecardProps> = ({
 		if (storedReaction) {
 			setSelectedImage(storedReaction);
 		} else {
-			setSelectedImage("/public/assets/img/main-tenant-coeur.svg");
+			setSelectedImage("/public/img/main-tenant-coeur.svg");
 		}
 	}, [id]);
 

@@ -34,46 +34,38 @@ const BoutonReactionTaped: React.FC<BoutonReactionTapedProps> = ({
 			className={`bg-zinc-900 rounded-3xl border-zinc-500 border overflow-hidden ml-5 mb-4 w-fit ${className}`}
 		>
 			<button
-				onClick={() =>
-					handleReactionClick("/public/assets/img/AstonishedFace.svg")
-				}
+				onClick={() => handleReactionClick("/public/img/AstonishedFace.svg")}
 			>
 				<img
 					className="m-2"
-					src="/public/assets/img/AstonishedFace.svg"
+					src="/public/img/AstonishedFace.svg"
 					alt="Astonished Face"
 				/>
 			</button>
 			<button
-				onClick={() =>
-					handleReactionClick("/public/assets/img/BeatingHeart.svg")
-				}
+				onClick={() => handleReactionClick("/public/img/BeatingHeart.svg")}
 			>
 				<img
 					className="m-2"
-					src="/public/assets/img/BeatingHeart.svg"
+					src="/public/img/BeatingHeart.svg"
 					alt="Beating Heart"
 				/>
 			</button>
 			<button
-				onClick={() =>
-					handleReactionClick("/public/assets/img/DisappointedFace.svg")
-				}
+				onClick={() => handleReactionClick("/public/img/DisappointedFace.svg")}
 			>
 				<img
 					className="m-2"
-					src="/public/assets/img/DisappointedFace.svg"
+					src="/public/img/DisappointedFace.svg"
 					alt="Disappointed Face"
 				/>
 			</button>
 			<button
-				onClick={() =>
-					handleReactionClick("/public/assets/img/ExplodingHead.svg")
-				}
+				onClick={() => handleReactionClick("/public/img/ExplodingHead.svg")}
 			>
 				<img
 					className="m-2"
-					src="/public/assets/img/ExplodingHead.svg"
+					src="/public/img/ExplodingHead.svg"
 					alt="Exploding Head"
 				/>
 			</button>
