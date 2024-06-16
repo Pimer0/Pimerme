@@ -16,19 +16,19 @@ export default function Rs() {
 			<RsCard
 				title="GitHub"
 				body="Mon humble Github si tu clic sur cette image"
-				image="/src/assets/img/github.svg"
+				image="/img/github.svg"
 				link="https://github.com/Pimer0"
 			/>
 			<RsCard
 				title="LinkedIn"
 				body="Mon humble LinkedIn si tu clic sur cette image"
-				image="/src/assets/img/linkedin.svg"
+				image="/img/linkedin.svg"
 				link="https://www.linkedin.com/in/paul-m%C3%A9randon/"
 			/>
 			<RsCard
 				title="Instagram"
 				body="Mon humble Instagram si tu clic sur cette image"
-				image="/src/assets/img/instagram.svg"
+				image="/img/instagram.svg"
 				link="https://www.instagram.com/grosmaraud/"
 			/>
 		</motion.div>

@@ -1,17 +1,17 @@
 {
     "cards": [
         {
-            "src": "/public/img/magic.png",
+            "src": "/img/magic.png",
             "alt": "Un tweet drole",
             "id": 1
         },
         {
-            "src": "/public/img/tweet.png",
+            "src": "/img/tweet.png",
             "alt": "Une image de elden ring",
             "id": 2
         },
         {
-            "src": "/public/img/eldenring.jpg",
+            "src": "/img/eldenring.jpg",
             "alt": "Un tweet drole",
             "id": 3
         }
@@ -21,17 +21,17 @@
 
     "slides": [
         {
-            "src": "/public/img/SlideReact.svg",
+            "src": "/img/SlideReact.svg",
             "alt": "Un logo react",
             "id": 1
         },
         {
-            "src": "/public/img/SlideTailwind.svg",
+            "src": "/img/SlideTailwind.svg",
             "alt": "Une image de elden ring",
             "id": 2
         },
         {
-            "src": "/public/img/SlideTs.svg",
+            "src": "/img/SlideTs.svg",
             "alt": "Un tweet drole",
             "id": 3
         }
